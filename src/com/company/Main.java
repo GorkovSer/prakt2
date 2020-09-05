@@ -8,6 +8,12 @@ class Autor
     private String email;
     private char gender;
 
+    public Autor(String Name, char Gender)
+    {
+        name=Name;
+        gender=Gender;
+    }
+
     public String getName() {
         return name;
     }
@@ -118,8 +124,8 @@ public class Main {
                 "⢕⢕⠅⢓⣕⣕⣕⣕⣵⣿⣿⣿⣾⣿⣿⣿⣿⣿⣿⣿⣷⣕⢕⢕⢕⢕⡵⢀⢕⢕\n" +
                 "⢑⢕⠃⡈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⢃⢕⢕⢕\n" );
 
-        Autor rand = new Autor();
-        rand.setInform("Владимир","vladimir.putin@gmail.com",'M');
+        Autor rand = new Autor("Vladimir",'M');
+        rand.setEmail("vladimir.putin@molodec.ru");
 
         System.out.println("Задание №1\n" + rand.toString());
         Ball ball = new Ball();
